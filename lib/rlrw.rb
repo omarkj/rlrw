@@ -7,9 +7,9 @@ module Rlrw
     def self.all(key, nodes)
       res = []
       nodes.each do |node|
-        res << [node, self.phash(key, node)]
+        res << { node: node, weight: self.phash(key, node) }
       end
-      res.sort_by { |_, val| -val }
+      res.sort_by { |res| -res[:weight] }
     end
 
     def self.top(key, nodes, len)
