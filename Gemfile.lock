@@ -7,6 +7,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
+    minitest (5.4.3)
     murmurhash3 (0.1.4)
     rake (10.4.2)
 
@@ -15,5 +16,6 @@ PLATFORMS
 
 DEPENDENCIES
   bundler (~> 1.7)
+  minitest (= 5.4.3)
   rake (~> 10.0)
   rlrw!
