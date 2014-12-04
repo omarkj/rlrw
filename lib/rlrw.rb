@@ -23,7 +23,7 @@ module Rlrw
       res = nodes.map do |node|
         { node: node, weight: phash.call(key, node) }
       end
-      res.sort_by { |res| -res[:weight] }
+      res.sort_by { |res| res[:weight] }
     end
 
     def self.top_weights(key, nodes, len, phash=PHASH)
