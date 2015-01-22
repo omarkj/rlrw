@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Rlrw::VERSION
   spec.authors       = ["omarkj"]
   spec.email         = ["omarkj@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = "Lowest Random Weight hashing"
+  spec.description   = %q{This hashing mechanism allows you to consistently hash to a specific node without needing to do bucketing first a'la Consistent Hashing. It also guarantees as little key redistribution as possible.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
